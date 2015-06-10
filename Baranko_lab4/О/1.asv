@@ -1,0 +1,18 @@
+clc
+
+x=-10:1:53;
+y=fun(x);
+plot(x,y)
+grid on
+
+xmin =  fminbnd(@fun,-5,5);
+ymin = fun(xmin)
+
+x=-10:1:10
+y=fun(x);
+figure
+plot(x,y)
+grid on
+
+maxX=fminbnd(@fun1,15,25)
+maxY=fun(xmin)
